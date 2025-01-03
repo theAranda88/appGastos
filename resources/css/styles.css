@@ -1,0 +1,35 @@
+h1{
+    /* text-aling: centramos el h1 en la pagina */
+    text-align: center;
+    color:brown;
+    font-family:'Courier New', Courier, monospace;
+}
+form{
+    text-align: center;
+}
+.claseFormulario{
+    /* color: brown;
+    background: black; 
+    padding: 10px;*/
+    font-family: Arial, sans-serif;
+}
+#botonAgregar{
+    /*background-color: red;*/
+    color: black;
+   
+    cursor: pointer;
+}
+body{
+    font-family: Arial, sans-serif;
+
+}
+td, th{
+    border:  solid red 1px;
+    padding: 7px    ;
+    text-align: center;
+}
+.tableFormat table{
+    margin: 0 auto;
+    margin-top: 10px;
+
+}

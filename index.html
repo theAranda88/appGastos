@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppGestionEconomia</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+    <h1>Mi Economia</h1>
+    <div class="row">
+        <div class="col l5 offset-l1 s12" >
+            <table id="tabla">
+                    <tr>
+                        <th>Tipo </th>
+                        <th>Descripcion</th>
+                        <th>Monto</th>
+                        <th>Categoria</th> 
+                        <th>Eliminar</th> 
+                    </tr>
+                    <!-- aqui se iran agregando las filas con los datos de la economia -->
+                    <!-- cada fila se crea con una etiqueta tr y cada celda con una td -->
+                    <!-- los id se utilizan para acceder a los valores de cada celda con js -->
+                    <!-- cada celda tiene una clase para darle un color diferente segun el tipo de transaccion -->
+                    <!-- con el innerText se agregan los valores de las columnas -->
+                    <!-- con el innerHTML se agregan los valores de las columnas con html -->   
+                    <tr>
+                    
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+            </table>
+            </div>
+        <div class="col l5 s12">
+            <div class="col s8 offset-s2">
+                <form id="formulario" action="">
+            <div class="claseFormulario">
+            <p>
+                <span> Transaccion </span>
+                <label>
+                  <input class="with-gap" name="selectorApp" type="radio" value="Ingreso" checked />
+                  <span>Ingreso</span>
+                </label>
+                <label>
+                  <input class="with-gap" name="selectorApp" type="radio" value="Egreso" checked />
+                  <span>Egreso</span>
+                </label>
+            </p>
+            </div>
+            
+            <div  class="input-field ">
+                <label for="descripcion">Descripcion</label>
+                <input class="validate" id="descripcion" type="text" name="descripcion">
+            </div>
+            <div  class="input-field ">
+                <label for="monto">Monto</label>
+            <!-- con el type="number" definimos que tipo de dato se va a recivir y solo deja recivir de ese tipo -->
+                <input class="validate" id="monto" type="number" name="monto">
+            </div>
+            <div  class="claseFormulario">
+                <label for="categoria">Selector de Categoria</label>
+                <select class="browser-default" id="categoria" name="categoria">
+                
+                </select>
+            </div>
+            <div  class="claseFormulario">
+                <button class="btn waves-effect waves-light" id="botonAgregar" type="submit" name="action">Agregar
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="resources/js/scrips.js"></script>
+</body>
+</html>
